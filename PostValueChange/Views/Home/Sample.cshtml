@@ -1,0 +1,39 @@
+﻿@model PostValueChange.Models.SampleViewModel
+
+@{
+    ViewData["Title"] = "Sample";
+}
+
+<h1>Sample</h1>
+
+<h4>SampleViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Sample" >
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="InputValue" class="control-label"></label>
+                <input asp-for="InputValue" class="form-control" />
+                <span asp-validation-for="InputValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="更新" class="btn btn-primary" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultValue1" class="control-label"></label>
+                <input asp-for="ResultValue1" class="form-control" />
+                <span asp-validation-for="ResultValue1" class="text-danger"></span>
+            </div>
+            <div>@Model?.ResultValue2</div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">前の画面に戻る</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

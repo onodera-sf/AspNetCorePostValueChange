@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+		<Description>フォームの Post 後にアクションで変更した値をビューに反映させるサンプルです。</Description>
+		<Company>ソーサリーフォース (https://sorceryforce.net/)</Company>
+		<Authors>おのでら (ソーサリーフォース)</Authors>
+		<Copyright>Copyright (C) 2021 おのでら</Copyright>
+	</PropertyGroup>
+
+</Project>
